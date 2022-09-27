@@ -29,3 +29,20 @@ After university I started to work as an economist. But after a year I switched 
 - VS Code
 - English (B1)
 - French (A2)
+
+## Code Example
+### Nickname Generator (CodeWars)
+Write a function, nicknameGenerator that takes a string name as an argument and returns the first 3 or 4 letters as a nickname. If the 3rd letter is a consonant, return the first 3 letters. If the 3rd letter is a vowel, return the first 4 letters.<br/>
+```
+function nicknameGenerator(name){
+  let vowels = ['a', 'e', 'i', 'o', 'u'];
+  if (name.length < 4) {
+    return 'Error: Name too short';
+  }
+  if (vowels.includes(name[2])) {
+    return name.slice(0, 4);
+  } else {
+    return name.slice(0, 3);
+  }
+} 
+```
